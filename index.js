@@ -1,21 +1,21 @@
-const express = require("express"); //importa o módulo express neste arquivo
-const app = express(); //iniciando o express
+const express = require("express"); 
+const app = express(); 
 
 //criando a rota inicial
 app.get("/", function(req,res){
-    res.send("<h1>Bjjjjjjj!</h1>");
+    res.send("<h1>Home page!</h1>");
 })
 
 //rota do cadastro de produtos
 app.get("/produtos", function(req,res){
-    res.send("<h1>kkkkk</h1>");
+    res.send("<h1>Lista de produtos</h1>");
 })
 
 //rota com parametro 
 app.get("/consulta/:parametro", function(req,res){
     //req --> dados enviados pelo cliente
     //res --> resposta enviada pelo servidor de volta ao cliente
-    res.send("retorno consulta:" + req.params.parametro);
+    res.send("retorno consulta teste 01:" + req.params.parametro);
 })
 
 //rota com parametro opcional
