@@ -15,7 +15,7 @@ app.get("/produtos", function(req,res){
 app.get("/consulta/:parametro", function(req,res){
     //req --> dados enviados pelo cliente
     //res --> resposta enviada pelo servidor de volta ao cliente
-    res.send("retorno consulta teste 01:" + req.params.parametro);
+    res.send("O produto " + req.params.parametro + " está disponivel");
 })
 
 //rota com parametro opcional
